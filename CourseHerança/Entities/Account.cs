@@ -18,9 +18,9 @@
             Balance = balance;
         }
 
-        public void WithDraw(double amount) //recebendo uma quantia como parametro
+        public virtual void WithDraw(double amount) //recebendo uma quantia como parametro //virtual nos diz que esse método pode ser sobreposto por uma subclasse
         {
-            Balance -= amount;
+            Balance -= amount + 5.0;
         }
 
         public void Deposit(double amount)
